@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: grey;
+            margin: 0px;
+        }
+        header {
+            width: 300px;
+            background-color: aliceblue;
+            padding: 10px;
+            margin: auto;
+            text-align: center;
+        }
+
+        nav {
+            background-color: lightgray;
+            width: 40px;
+            padding: 2px;
+            margin: auto;
+            box-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.651);
+        }
+
+        nav > a {
+            color: black;
+            text-decoration: none;
+        }
+
+        nav > a:hover {
+            color: blanchedalmond;
+            text-decoration: underline;
+        }
+
+        #assuntos {
+            background-color: red;
+            padding: 10px;
+            margin: 4px;
+            border-radius: 50px; /*uma medida para os quatro - duas para na primeira superior esquerda e inferior direita e na segunda superior direita e inferior esquerda - quatro para cobrir todos os lados - não esquecer do relógio*/
+        }
+
+        #noticias {
+            background-color: aquamarine;
+            padding: 10px;
+            margin: 4px;
+        }
+
+        article > aside {
+            background-color: rgba(137, 43, 226, 0.712);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 0px;
+        }
+        
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            margin: 10px;
+            box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.473);
+            border-radius: 60%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meus site S2</h1>
+        <nav>
+            <a href="@">link<br></a>
+            <a href="@">link<br></a>
+            <a href="@">link<br></a>
+            <a href="@">link<br></a>
+            <a href="@">link<br></a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h1>Assuntos abordados nessa merda</h1>
+            <h2>rola</h2>
+            <h2>rolinha</h2>
+            <h2>rolão</h2>
+        </section>
+        <section id="noticias">
+            <h1>sim?</h1>
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci qui illum molestias. Animi impedit in omnis voluptatem eum. Similique delectus deserunt iste repudiandae neque mollitia magni consequuntur, eveniet fugit quis?</p>
+                <aside>
+                    <p>escrito por baboseira blá blá blá</p>
+                </aside>
+            </article>
+            <article>
+                <h1>SIM</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, odio ratione consectetur minus cupiditate rem placeat consequatur possimus sed vitae voluptatibus necessitatibus culpa porro odit optio ex quaerat quas tempora!</p>
+                <aside>escrito por blá blá blá</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>mamado por vavinho</p>
+    </footer>
+    <div id ="bola"></div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        /*   SELETORES PERSONALIZADOS
+        #  = id
+        .  = class
+        : = pseudo-class
+        :: = pseudo-element
+        >  = children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: aqua;
+        }
+
+        a:active {
+            color: yellowgreen;
+        }
+
+        .especial::before {
+            content: "⇒ ";
+        }
+
+        .especial::after {
+            content: " ⇐";
+        }
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/vavinhooo/" target="_blank" rel="external">insta</a></li>
+        <li><a href="https://www.twitch.tv/vavinhoo" class="especial" target="_blank" rel="external">twitch</a></li>
+        <li><a href="https://fitgirl-repacks.site/" target="_blank" rel="external">pirataria</a></li>
+    </ul>
+</body>
+</html>

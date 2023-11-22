@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {/*não esquecer de colocar alguma merda genérica para garantir que vai funfar no navegador*/
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            font-weight: 900;
+            /*lighter, normal, bold, bolder
+            Dá para trabalhar com % também, que vai de 100 a 900. Não esquece que a % não deve ser escrita*/
+            font-style: italic;
+            text-decoration: overline;
+            /*shorthand font
+            font-style -> font-weight -> font-size -> font-family*/
+        }
+        h1,h2{
+            font: italic 900 2em fantasy;
+        }
+        /*Medidas absolutas:
+        cm, mm, in(polegada), px, pt(ponto), pc(paica)
+
+        Medidas relativas:
+        em (altura relativa ao "M" de uma fonte), ex (altura relativa ao "x"), rem (tipo o "em" só que relativo a fonte configurada no body), vw (largura relativo ao tamanho da tela), vh (altura relativo ao tamanho da tela), % e algumas outras merdas
+        16px parece ser o tamanho padrão
+        16px geralmente é igual a 1em
+        */
+   
+    </style>
+</head>
+<body>
+    <h1>Fontes carai</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex possimus unde debitis neque repudiandae, aut reprehenderit dolorem, amet natus ducimus, veniam dolores a tempora at! Placeat, veniam! Est, laboriosam quos!</p>
+    <h2>mais merda</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sed, atque consectetur dolore nesciunt molestiae aut mollitia eius ipsa fugit rem, quibusdam quo repellendus accusantium ut in illum vero sint.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eligendi maiores explicabo officiis illum dicta, harum ratione, ipsam vel suscipit non architecto, esse amet porro illo tempore optio hic consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae temporibus, nemo omnis facilis eligendi rerum itaque unde at dolor cum cupiditate accusantium assumenda minus nam quam quibusdam quae commodi explicabo!</p>
+</body>
+</html>

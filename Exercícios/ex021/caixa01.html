@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /*border-width: 30px;
+            border-style: solid;
+            border-color: red;*/
+
+            border: 30px solid red;
+
+            /*padding-top: 50px;
+            padding-right: 50px;
+            padding-left: 50px;
+            padding-bottom: 50px;*/
+
+            padding: 50px; /* se os 4 valores forem iguais só precisa informar uma vez a medida.
+            Se inserido dois valores, o primeiro é para cima + baixo e o segundo para a direita + esquerda*/
+
+            /*escrever em sentido horário*/
+
+            /*margin-top: 50px;
+            margin-right: 50px;
+            margin-bottom: 102px;
+            margin-left: 50px;*/
+
+            margin: 50px 50px 102px 50px;
+
+            /*margin: auto; para centralizar a caixa*/
+
+            /*outline-width: 50px;
+            outline-style: dotted;
+            outline-color: blueviolet;*/
+
+            outline: 50px dotted blueviolet;
+        }
+
+        a {
+            display:block;/* só para demonstrar que dá para trocar essa porra*/
+            border-width: 2px;
+            border-style: dashed;
+            border-color: blue;
+
+            padding-top: 49px;
+            padding-right: 50px;
+            padding-left: 50px;
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="@"> links são exemplos de caixas inline-level.</a> Vamos ver como essa porra funfa</p>
+</body>
+</html>
