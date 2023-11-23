@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: xilosa;
+    src: url(/fonte/xilosa.ttf) format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor1: #f8afb6;
+    --cor2: black;
+    --cor3: white;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-titulo: 'xilosa'
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: gray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    /*text-transform: uppercase; deixar tudo maiúsculo*/
+    font-family: 'xilosa';
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    height: 97vh;
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+}
+
+main {
+    font-family: 'xilosa';
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+
+section.normal {
+    background-color: var(--cor1);
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
