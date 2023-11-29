@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe {
+            width: 400px;
+            height: 400px;
+            box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.178);
+            /* dá pra colocar até sombra no iframe kkkkkkkk*/
+        }
+    </style>
+    <!--CSS sobrepoe as configs inline-->
+</head>
+<body>
+    <!--Por padrão o iframe tem 300x150-->
+    <h1>Testando o uso de iframe</h1>
+    <p>
+        sim sim sim sim sim sim sim 
+        <!--parâmetro scolling para tirar ou permitir a barra de rolagem do iframe. as vezes não funfa-->
+        <iframe src="https://www.cursoemvideo.com" frameborder="1" height="600" width="800" scolling="no"></iframe>
+
+        sim sim sim sim sim sim sim
+    </p>
+    <p>
+        sim sim sim sim SIM
+
+        <iframe src="https://www.youtube.com/watch?v=GWULnkTnapM&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=2" frameborder="0"></iframe>
+
+        pena que alguns sites não funfam no iframe sim sim sim
+    </p>
+    <!--Dá para colocar links caso o navegador não seja compatível com o iframe-->
+    <p>
+        SIM
+
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="800">
+        <a href="https://gustavoguanabara.github.io" target="_blank">sim</a>
+        </iframe>
+
+        SIM
+    </p>
+</body>
+</html>
